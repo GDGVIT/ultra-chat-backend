@@ -2,59 +2,103 @@
 <a href="https://dscvit.com">
 	<img width="400" src="https://user-images.githubusercontent.com/56252312/159312411-58410727-3933-4224-b43e-4e9b627838a3.png#gh-light-mode-only" alt="GDSC VIT"/>
 </a>
-	<h2 align="center"> Ultra Chat Backend  </h2>
+	<h2 align="center"> Ultra Chat Backend </h2>
 	<h4 align="center"> Backend written in golang for ultra-chat-bot <h4>
 </p>
 
 ---
+
 [![Join Us](https://img.shields.io/badge/Join%20Us-Developer%20Student%20Clubs-red)](https://dsc.community.dev/vellore-institute-of-technology/)
 [![Discord Chat](https://img.shields.io/discord/760928671698649098.svg)](https://discord.gg/498KVdSKWR)
 
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE)
+[![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
 
+## Table of Contents
 
-## Features
-- [ ]  < feature >
-- [ ]  < feature >
-- [ ]  < feature >
-- [ ]  < feature >
+- [Key Features](#key-features)
+  - [Authentication](#authentication)
+  - [Summaries](#summaries)
+- [Usage](#usage)
+  - [Installation](#installation)
+  - [Running](#running)
+- [API Documentation](#api-documentation)
+- [Developer](#developer)
 
 <br>
 
-## Dependencies
- - < dependency >
- - < dependency >
+## Key Features
 
+### Authentication
 
-## Running
+- [x] Discord OAuth2 Integration
+- [x] JWT based authentication
+- [x] User profile management
 
+### Summaries
 
-< directions to install > 
+- [x] Create chat summaries
+- [x] Retrieve user summaries
+- [x] Update existing summaries
+- [x] Delete summaries
+- [x] Private/Public summary options
+
+<br>
+
+## Usage
+
+### Installation
+
 ```bash
-< insert code >
+# Clone the repository
+git clone https://github.com/GDGVIT/ultra-chat-backend.git
+
+# Install dependencies
+go mod download
 ```
 
-< directions to execute >
+### Running
 
 ```bash
-< insert code >
+# Set environment variables
+export PORT=5001
+export MONGODB_URI=your_mongodb_uri
+export CLIENT_ID=your_discord_client_id
+export CLIENT_SECRET=your_discord_client_secret
+export REDIRECT_URI=your_redirect_uri
+
+# Run the server
+go run main.go
 ```
 
-## Contributors
+## API Documentation
+
+Postman API Documentation available in [postman.json](postman.json)
+
+Key Endpoints:
+
+- POST /create-summary - Create a new chat summary
+- GET /summarizer - Get user summaries
+- PUT /update-summary - Update existing summary
+- DELETE /delete-summary - Delete a summary
+- GET /is_authenticated - Check authentication status
+
+<br>
+
+## Developer
 
 <table>
 	<tr align="center">
 		<td>
-		John Doe
+		Aman Singh
 		<p align="center">
-			<img src = "https://dscvit.com/images/dsc-logo-square.svg" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
+			<img src = "https://avatars.githubusercontent.com/u/80804989?v=4" width="150" height="150" alt="Aman Singh">
 		</p>
 			<p align="center">
-				<a href = "https://github.com/person1">
+				<a href = "https://github.com/DevloperAmanSingh">
 					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
 				</a>
-				<a href = "https://www.linkedin.com/in/person1">
+				<a href = "https://www.linkedin.com/in/amansingh2112">
 					<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36" alt="LinkedIn"/>
 				</a>
 			</p>

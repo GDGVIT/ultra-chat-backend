@@ -1,0 +1,117 @@
+{
+  "info": {
+    "name": "Ultra Chat API",
+    "description": "API endpoints for Ultra Chat application",
+    "_postman_id": "6f3a9f72-235b-49b5-9a1c-660f8e8a34c7",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Summary",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"content\": \"This is a sample summary\", \"server_id\": \"1234\", \"is_private\": true, \"user_id\": \"5678\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5001/summaries",
+          "host": ["localhost"],
+          "port": "5001",
+          "path": ["summaries"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Summaries",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "ID",
+            "value": "5678"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5001/summaries",
+          "host": ["localhost"],
+          "port": "5001",
+          "path": ["summaries"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Summary",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"summary_id\": \"1234\", \"server_id\": \"5678\", \"is_private\": true, \"content\": \"Updated content\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5001/summaries",
+          "host": ["localhost"],
+          "port": "5001",
+          "path": ["summaries"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Summary",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"summary_id\": \"1234\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5001/summaries",
+          "host": ["localhost"],
+          "port": "5001",
+          "path": ["summaries"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Is Authenticated",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer your_access_token"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5001/authenticate",
+          "host": ["localhost"],
+          "port": "5001",
+          "path": ["authenticate"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

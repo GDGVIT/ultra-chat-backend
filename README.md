@@ -3,7 +3,7 @@
 	<img width="400" src="https://user-images.githubusercontent.com/56252312/159312411-58410727-3933-4224-b43e-4e9b627838a3.png#gh-light-mode-only" alt="GDSC VIT"/>
 </a>
 	<h2 align="center"> Ultra Chat Backend  </h2>
-	<h4 align="center"> Backend written in go for ultra-chat-bot <h4>
+	<h4 align="center"> Backend written in golang for ultra-chat-bot <h4>
 </p>
 
 ---

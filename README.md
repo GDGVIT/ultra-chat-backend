@@ -73,7 +73,7 @@ go run main.go
 
 ## API Documentation
 
-Postman API Documentation available in [postman.json](postman.json)
+Postman API Documentations - [Ultra Chat Backend](https://github.com/DevloperAmanSingh/ultra-chat-backend/blob/main/postman.json)
 
 Key Endpoints:
 
